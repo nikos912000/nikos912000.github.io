@@ -1,0 +1,39 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://yoursite.com
+title: Nikos Katirtzis
+email: nikos912000hotmail.com
+author: Nikos Katirtzis
+description: > # "Nikos Katirtzis' Personal Page"
+copyright: 'Copyright &copy; 2016 Nikos Katirtzis. All Rights Reserved.'
+credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+social:
+  - icon: envelope-o
+    title: email
+    url: mailto:nikos912000@hotmail.com
+    contact: true
+  - icon: linkedin
+    title: linkedin
+    url: https://www.linkedin.com/in/nkatirtzis
+    contact: true
+  - icon: github
+    title: github
+    url: https://github.com/nikos912000
+  - icon: file-pdf-o
+    title: resume
+    url: https://www.dropbox.com/s/5ja3waedf2xp2yx/CV_Katirtzis_Nikolaos.pdf?dl=0
