@@ -1,6 +1,6 @@
 ---
 layout: default
-img: mantissa.png
+img: mantissa.svg
 category: Projects
 title: Diploma Thesis - Mining Software Repositories for Test-Driven Reuse (Mantissa)
 description: |

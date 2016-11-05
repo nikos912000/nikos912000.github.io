@@ -1,6 +1,6 @@
 ---
 layout: default
-img: api_summariser.png
+img: api_summariser.svg
 category: Projects
 title: MSc Thesis - Summarising How a Software API is Used Using Machine Learning and Natural Language Processing Techniques
 description: |
