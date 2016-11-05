@@ -14,3 +14,5 @@ description: |
 * Mantissa adopts the user’s query, extracting the query from user’s code and using the Vector Space Model (VSM) to compare the query with the results. Various techniques from the areas of Information Retrieval (IR) and Natural Language Processing (NLP) have been employed in order to make this comparison as effective as possible.
 
 * Eventually, the system informs the user about the relativeness of the results, their complexity and their functionality.
+
+* The report of the thesis is available [here](https://www.dropbox.com/s/d70b8q7v83u74li/Katirtzis_Nikolaos_TDD_Reuse.pdf?dl=0).

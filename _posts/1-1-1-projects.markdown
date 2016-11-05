@@ -15,4 +15,4 @@ description: |
 
 * Additionally, it exploits the power of a novel summarisation algorithm, that has been implemented as part of this project, in order to produce concise and readable snippets, which it presents to the users, in an order that indicates their popularity.
 
-* The report is available [here](https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf?dl=0).
+* The report of the thesis is available [here](https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf?dl=0).
