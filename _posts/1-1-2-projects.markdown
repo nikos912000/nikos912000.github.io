@@ -7,6 +7,7 @@ description: |
 ---
 
 <br>
+
 * [Mantissa](http://mantissa.ee.auth.gr:5050/) is a Recommendation System for Software Engineering (RSSE) emphasizing Test-Driven Development (TDD), which allows code searching in growing repositories.
 
 * The search is based on a user’s code, while there is a chance to supply search with a JUnit test.
