@@ -7,7 +7,7 @@ title: Nikos Katirtzis
 email: nikos912000hotmail.com
 author: Nikos Katirtzis
 description: > # "Nikos Katirtzis' Personal Page"
-copyright: 'Copyright &copy; 2016 Nikos Katirtzis. All Rights Reserved.'
+copyright: 'Copyright &copy; 2017 Nikos Katirtzis. All Rights Reserved.'
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -35,4 +35,4 @@ social:
     url: https://github.com/nikos912000
   - icon: file-pdf-o
     title: resume
-    url: http://nbviewer.jupyter.org/github/nikos912000/personal-cv/blob/master/cv.pdf
+    url: https://nbviewer.jupyter.org/github/nikos912000/personal-cv/blob/master/cv.pdf
