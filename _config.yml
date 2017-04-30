@@ -15,7 +15,7 @@ copyright: 'Copyright &copy; 2017 Nikos Katirtzis. All Rights Reserved.'
 
 # Build settings
 markdown: kramdown
-
+future: true
 permalink: pretty
 
 # ----------------------- #
