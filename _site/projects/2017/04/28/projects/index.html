@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Nikos Katirtzis">
 
-    <title>MSc Thesis - Summarising How a Software API is Used Using Machine Learning and Natural Language Processing Techniques</title>
+    <title>CLAMS (CLustering for API Mining of Snippets)</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +74,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="intro-message">
-						<h1>MSc Thesis - Summarising How a Software API is Used Using Machine Learning and Natural Language Processing Techniques</h1>
+						<h1>CLAMS (CLustering for API Mining of Snippets)</h1>
 						<h3></h3>
 						<hr class="intro-divider">
 						<ul class="list-inline intro-social-buttons">
@@ -150,7 +150,7 @@
 
 * The team follows the Scrum process, while we pursue popular Agile practices, including Pair Programming, CI, TDD, and BDD.
 
-* The technologies I use as part of the team include, among others, Java, Spring, TestNG, Mockito, and Docker.
+* The technologies I use as part of the team include, among others, Java, Spring MVC, TestNG, Mockito, Docker, and Cassandra.
 </div>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -185,24 +185,28 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <h2 class="section-heading">Diploma Thesis - Mining Software Repositories for Test-Driven Reuse (Mantissa)</h2>
+                        <h2 class="section-heading">Mantissa</h2>
                         <div class="lead"><p><br /></p>
 
 <ul>
   <li>
-    <p><a href="http://mantissa.ee.auth.gr:5050/">Mantissa</a> is a Recommendation System for Software Engineering (RSSE) emphasizing Test-Driven Development (TDD), which allows code searching in growing repositories.</p>
+    <p><a href="http://mantissa.ee.auth.gr:5050/">Mantissa</a> is an RSSE (Recommendation System in Software Engineering) that allows searching for software components in growing repositories.</p>
   </li>
   <li>
-    <p>The search is based on a user’s code, while there is a chance to supply search with a JUnit test.</p>
+    <p>The system extracts the query from the source code of the developer, employs CSEs such as GitHub to search for available source code, and ranks the retrieved results using the Vector Space Model (VSM).</p>
   </li>
   <li>
-    <p>Mantissa adopts the user’s query, extracting the query from user’s code and using the Vector Space Model (VSM) to compare the query with the results. Various techniques from the areas of Information Retrieval (IR) and Natural Language Processing (NLP) have been employed in order to make this comparison as effective as possible.</p>
+    <p>Various techniques from the area of Information Retrieval (IR) are employed in order to best rank the results.</p>
   </li>
   <li>
-    <p>Eventually, the system informs the user about the relativeness of the results, their complexity and their functionality.</p>
+    <p>Additional source code transformations are performed so that each result can be ready-to-use by the developer.</p>
   </li>
   <li>
-    <p>The report of the thesis is available <a href="https://www.dropbox.com/s/d70b8q7v83u74li/Katirtzis_Nikolaos_TDD_Reuse.pdf?dl=0">here</a>.</p>
+    <p>Each result is presented along with relevance scoring and useful information indicating its original source code, its control flow, as well as any
+external dependencies.</p>
+  </li>
+  <li>
+    <p>This project contains work from the MEng thesis submitted while being an undergraduate student at Aristotle University of Thessaloniki. The report of the thesis is available in Greek <a href="https://www.dropbox.com/s/d70b8q7v83u74li/Katirtzis_Nikolaos_TDD_Reuse.pdf?dl=0">here</a>.</p>
   </li>
 </ul>
 </div>
@@ -233,24 +237,24 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-5 col-sm-6">
-                        <h2 class="section-heading">MSc Thesis - Summarising How a Software API is Used Using Machine Learning and Natural Language Processing Techniques</h2>
+                        <h2 class="section-heading">CLAMS (CLustering for API Mining of Snippets)</h2>
                         <div class="lead"><p><br /></p>
 
 <ul>
   <li>
-    <p>A framework that successfully confronts the problem of API Usage Mining.</p>
+    <p>A framework for mining API snippets.</p>
   </li>
   <li>
-    <p>The system leverages powerful clustering techniques, such as the k-medoids or the HDBSCAN algorithms, in order to cluster similar usage examples, based on their API call sequences.</p>
+    <p>CLAMS clusters a large set of usage examples based on what API methods they call. It then generates summarised versions for the top snippets of each cluster using a simple summarisation algorithm, and selects the most representative snippet from each cluster, using a tree edit distance metric on the ASTs.</p>
   </li>
   <li>
-    <p>With the aim of presenting the most representative snippet from each cluster, it also considers the structure of the source code, by making use of a tree edit distance metric.</p>
+    <p>This results in a set of high quality API usage examples in the form of concise and readable snippets, thus enabling and supporting source code reuse even in cases of libraries with sparse or minimal documentation.</p>
   </li>
   <li>
-    <p>Additionally, it exploits the power of a novel summarisation algorithm, that has been implemented as part of this project, in order to produce concise and readable snippets, which it presents to the users, in an order that indicates their popularity.</p>
+    <p>Method is entirely data-driven, requiring only syntactic information from the program, and so is programming-language agnostic.</p>
   </li>
   <li>
-    <p>The report of the thesis is available <a href="https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf?dl=0">here</a>.</p>
+    <p>This project contains work from the MSc thesis submitted while being a postgraduate student at University of Edinburgh. The report of the thesis is available <a href="https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf?dl=0">here</a>.</p>
   </li>
 </ul>
 </div>

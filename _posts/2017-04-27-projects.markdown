@@ -2,18 +2,21 @@
 layout: default
 img: mantissa.svg
 category: Projects
-title: Diploma Thesis - Mining Software Repositories for Test-Driven Reuse (Mantissa)
+title: Mantissa
 description: |
 ---
 
 <br>
 
-* [Mantissa](http://mantissa.ee.auth.gr:5050/) is a Recommendation System for Software Engineering (RSSE) emphasizing Test-Driven Development (TDD), which allows code searching in growing repositories.
+* [Mantissa](http://mantissa.ee.auth.gr:5050/) is an RSSE (Recommendation System in Software Engineering) that allows searching for software components in growing repositories.
 
-* The search is based on a user’s code, while there is a chance to supply search with a JUnit test.
+* The system extracts the query from the source code of the developer, employs CSEs such as GitHub to search for available source code, and ranks the retrieved results using the Vector Space Model (VSM).
 
-* Mantissa adopts the user’s query, extracting the query from user’s code and using the Vector Space Model (VSM) to compare the query with the results. Various techniques from the areas of Information Retrieval (IR) and Natural Language Processing (NLP) have been employed in order to make this comparison as effective as possible.
+* Various techniques from the area of Information Retrieval (IR) are employed in order to best rank the results.
 
-* Eventually, the system informs the user about the relativeness of the results, their complexity and their functionality.
+* Additional source code transformations are performed so that each result can be ready-to-use by the developer.
 
-* The report of the thesis is available [here](https://www.dropbox.com/s/d70b8q7v83u74li/Katirtzis_Nikolaos_TDD_Reuse.pdf?dl=0).
+* Each result is presented along with relevance scoring and useful information indicating its original source code, its control flow, as well as any
+external dependencies.
+
+* This project contains work from the MEng thesis submitted while being an undergraduate student at Aristotle University of Thessaloniki. The report of the thesis is available in Greek [here](https://www.dropbox.com/s/d70b8q7v83u74li/Katirtzis_Nikolaos_TDD_Reuse.pdf?dl=0).
