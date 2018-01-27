@@ -17,3 +17,5 @@ description: |
 * Method is entirely data-driven, requiring only syntactic information from the program, and so is programming-language agnostic.
 
 * This project contains work from the MSc thesis submitted while being a postgraduate student at University of Edinburgh. The report of the thesis is available [here](https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf?dl=0).
+
+* The source code of the system is available [here](https://github.com/mast-group/clams).
