@@ -12,4 +12,4 @@ description: |
 
 * The team follows the Scrum process, while we pursue popular Agile practices, including Pair Programming, CI, TDD, and BDD.
 
-* The technologies I use as part of the team include, among others, Java, Spring MVC, TestNG, Mockito, Docker, and Cassandra.
+* The technologies I use as part of the team include, among others, Java, Python, Scala, Spring MVC, TestNG, Mockito, Docker, Splunk, MSSQL, and Cassandra.

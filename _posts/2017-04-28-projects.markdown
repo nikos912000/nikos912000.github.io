@@ -8,7 +8,7 @@ description: |
 
 <br>
 
-* A framework for mining API snippets.
+* A framework for mining API snippets in the form of source code snippets, from client code.
 
 * CLAMS clusters a large set of usage examples based on what API methods they call. It then generates summarised versions for the top snippets of each cluster using a simple summarisation algorithm, and selects the most representative snippet from each cluster, using a tree edit distance metric on the ASTs.
 
@@ -18,4 +18,6 @@ description: |
 
 * This project contains work from the MSc thesis submitted while being a postgraduate student at University of Edinburgh. The report of the thesis is available [here](https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf?dl=0).
 
-* The source code of the system is available [here](https://github.com/mast-group/clams).
+* The system is available [here](https://mast-group.github.io/clams/).
+
+* You may find the paper presented at the International Conference on Fundamental Approaches to Software Engineering (FASE) 2018 [here](http://homepages.inf.ed.ac.uk/csutton/publications/clamsFase2018.pdf).
