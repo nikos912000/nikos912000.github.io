@@ -1,15 +1,13 @@
-# NikosKatirtzis
+# Nikos Katirtzis
 
-This project implements [chrislaffra.com](https://nikoskatirtzis.com).
+This project implements [nikoskatirtzis.com](https://nikoskatirtzis.com).
 
-Technology used in order of abstraction:
- - Internet
- - IP protocol
- - Browser
- - HTML
- - JavaScript
- - jQuery
- - WebAssembly
- - Pyscript
- - MicroPython
- - [LTK](https://github.com/laffra/ltk)
+Inspired by [chrislaffra.com](https://chrislaffra.com).
+
+## How To Run
+
+Start a web server to serve your files in the web browser:
+
+```bash
+python3 -m http.server
+```

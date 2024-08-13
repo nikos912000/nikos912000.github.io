@@ -91,7 +91,7 @@ items = [
         100,
         "2018",
         "Developer Tools",
-        "img/meng_thesis.png",
+        "img/hotels.png",
         "https://medium.com/hotels-com-technology/going-beyond-grep-for-searching-source-code-zoekt-e7da88ac7b2e",
     ),
     Item(
@@ -100,7 +100,7 @@ items = [
         100,
         "2019",
         "Java & Performance",
-        "img/hotels_logo.png",
+        "img/hotels.png",
         "https://grpc.io/docs/languages/java/#dev-stories",
     ),
     Item(
@@ -109,7 +109,7 @@ items = [
         100,
         "2020",
         "Mittens",
-        "img/mittens_logo.png",
+        "img/mittens.png",
         "https://medium.com/expedia-group-tech/mittens-warming-up-your-application-f8dd244357b0",
     ),
     Item(
@@ -118,7 +118,7 @@ items = [
         100,
         "2020",
         "Observability",
-        "img/expedia_group_logo.png",
+        "img/expedia_group.png",
         "https://medium.com/expedia-group-tech/creating-monitoring-dashboards-1f3fbe0ae1ac",
     ),
     Item(
@@ -127,7 +127,7 @@ items = [
         100,
         "2022",
         "Open Source",
-        "img/expedia_group_logo.png",
+        "img/expedia_group_open_source.png",
         "https://medium.com/expedia-group-tech/open-source-at-expedia-group-behind-the-scenes-ecc7d4480566",
     ),
     Item(
@@ -136,7 +136,7 @@ items = [
         100,
         "2022",
         "Platform Engineering",
-        "img/expedia_group_logo.png",
+        "img/expedia_group.png",
         "https://medium.com/expedia-group-tech/chaos-engineering-at-expedia-group-e51a0288ee2",
     ),
     Item(
@@ -145,7 +145,7 @@ items = [
         100,
         "2023",
         "Reliability Engineering",
-        "img/expedia_group_logo.png",
+        "img/expedia_group_reliability_engineering.png",
         "https://www.youtube.com/watch?v=CAq2HPNxVcs",
     ),
     Item(
@@ -154,15 +154,24 @@ items = [
         100,
         "2024",
         "Go & Kubernetes",
-        "img/expedia_group_logo.png",
+        "img/expedia_group.png",
         "https://www.infoq.com/news/2024/04/expedia-startup-autoscaler/",
+    ),
+    Item(
+        780,
+        250,
+        100,
+        "2024",
+        "Randomly Learning",
+        "img/randomly_learning.png",
+        "https://github.com/nikos912000/randomly-learning/",
     ),
 ]
 
 def tile(url, image, label, width=120, height=120):
     return ltk.Link(url,
         ltk.VBox(
-            ltk.Image(f"https://chrislaffra.com/{image}")
+            ltk.Image(image)
                 .css("border", "5px solid transparent")
                 .on("mouseenter", ltk.proxy(
                     lambda e: ltk.find(e.target).css("border-color", "orange")
@@ -182,20 +191,20 @@ def tile(url, image, label, width=120, height=120):
     ).attr("target", "_blank")
 
 tiles = [
-    tile("http://mantissa.ee.auth.gr:5050/", "ltk.png", "Mantissa"),
-    tile("https://mast-group.github.io/clams/", "ltk.png", "CLAMS"),
-    tile("https://github.com/HotelsDotCom/hapidoc-web", "ltk.png", "HApiDoc"),
-    tile("https://github.com/ExpediaGroup/mittens", "ltk.png", "Mittens"),
-    tile("https://medium.com/expedia-group-tech/mittens-warming-up-your-application-f8dd244357b0", "ltk.png", "Mittens Blogpost"),
-    tile("https://github.com/ExpediaGroup/container-startup-autoscaler", "ltk.png", "Container Startup Autoscaler"),
-    tile("https://medium.com/expedia-group-tech/introducing-container-startup-autoscaler-for-kubernetes-9f15a981b69e", "ltk.png", "Container Startup Autoscaler Blogpost"),
-    tile("https://medium.com/expedia-group-tech/chaos-engineering-at-expedia-group-e51a0288ee2", "ltk.png", "Chaos Engineering Platform"),
-    tile("https://www.facebook.com/atscaleevents/videos/chaos-engineering-at-scale-nikos-katirtzis/3428269490741576/", "ltk.png", "Systems at Scale"),
-    tile("https://opensource.datadoghq.com/projects/chaos-controller/#external-contributions-spotlight", "ltk.png", "Chaos Controller Contributor"),
-    tile("https://medium.com/expedia-group-tech/open-source-at-expedia-group-behind-the-scenes-ecc7d4480566", "ltk.png", "Open Source at Expedia Blogpost"),
-    tile("https://www.youtube.com/watch?v=LDd-mzegvqg", "ltk.png", "Open Source at Commercial Organisations"),
-    tile("https://www.youtube.com/watch?v=CAq2HPNxVcs", "ltk.png", "Paving the Road for Proactive Reliability"),
-    tile("https://nkatirtzis.medium.com/the-new-era-of-developer-tools-154886a7f183", "ltk.png", "The new era of developer tools"),
+    tile("https://github.com/nikos912000/randomly-learning/", "img/randomly_learning.png", "Randomly Learning"),
+    tile("https://opensource.datadoghq.com/projects/chaos-controller/#external-contributions-spotlight", "img/chaos_controller.png", "Chaos Controller"),
+    tile("https://github.com/ExpediaGroup/mittens", "img/mittens_square.png", "Mittens"),
+    tile("https://github.com/HotelsDotCom/hapidoc-web", "img/hapidoc.png", "HApiDoc"),
+    tile("https://mast-group.github.io/clams/", "img/clams.png", "CLAMS"),
+    tile("http://mantissa.ee.auth.gr:5050/", "img/mantissa.png", "Mantissa"),
+    tile("https://github.com/nikos912000", "img/github.png", "GitHub"),
+    tile("https://medium.com/@nkatirtzis", "img/medium.png", "Medium"),
+    tile("https://www.linkedin.com/in/nkatirtzis/", "img/linkedin.png", "LinkedIn"),
+    tile("https://mastodon.social/@nikos912000", "img/mastodon.png", "Mastodon"),
+    tile("https://twitter.com/nikos912000/", "img/twitter.png", "Twitter"),
+    tile("https://scholar.google.com/citations?hl=en&user=97v69QoAAAAJ", "img/google_scholar.png", "Publications"),
+    tile("https://speakerdeck.com/nikos912000", "img/speakerdeck.png", "Slides"),
+    tile("https://youtube.com/playlist?list=PL91tHEodCy_GwWJKbqaB-aFQ_jXOa7442&si=oO7h8E4hBQKQGOpZ", "img/youtube.png", "Youtube"),
 ]
 
 (
