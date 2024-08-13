@@ -1,0 +1,2 @@
+pyscript==0.2.5
+pyscript-ltk==0.1.42
