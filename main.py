@@ -199,6 +199,7 @@ tiles = [
     tile("http://mantissa.ee.auth.gr:5050/", "img/mantissa.png", "Mantissa"),
     tile("https://github.com/nikos912000", "img/github.png", "GitHub"),
     tile("https://medium.com/@nkatirtzis", "img/medium.png", "Medium"),
+    tile("https://substack.com/@nikoskatirtzis", "img/substack.png", "Substack"),
     tile("https://www.linkedin.com/in/nkatirtzis/", "img/linkedin.png", "LinkedIn"),
     tile("https://mastodon.social/@nikos912000", "img/mastodon.png", "Mastodon"),
     tile("https://twitter.com/nikos912000/", "img/twitter.png", "Twitter"),
