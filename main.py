@@ -166,6 +166,15 @@ items = [
         "img/randomly_learning.png",
         "https://github.com/nikos912000/randomly-learning/",
     ),
+    Item(
+        860,
+        500,
+        100,
+        "2024",
+        "Data Engineering",
+        "img/slo_platform.png",
+        "https://medium.com/expedia-group-tech/enhancing-data-reliability-with-an-slo-platform-de00249756f6",
+    ),
 ]
 
 def tile(url, image, label, width=120, height=120):
@@ -198,7 +207,7 @@ tiles = [
     tile("https://mast-group.github.io/clams/", "img/clams.png", "CLAMS"),
     tile("http://mantissa.ee.auth.gr:5050/", "img/mantissa.png", "Mantissa"),
     tile("https://github.com/nikos912000", "img/github.png", "GitHub"),
-    tile("https://medium.com/@nkatirtzis", "img/medium.png", "Medium"),
+    tile("https://medium.com/@nkatirtzis/list/contributions-6ca764e7fe66", "img/medium.png", "Medium"),
     tile("https://substack.com/@nikoskatirtzis", "img/substack.png", "Substack"),
     tile("https://www.linkedin.com/in/nkatirtzis/", "img/linkedin.png", "LinkedIn"),
     tile("https://mastodon.social/@nikos912000", "img/mastodon.png", "Mastodon"),
