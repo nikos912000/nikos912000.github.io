@@ -33,7 +33,7 @@ class Item(ltk.Widget):
                             lambda e: ltk.find(e.target).css("border-color", "transparent")
                         )),
                     ltk.Text(label).css("text-align", "center")
-                        .css("font-size", 20)
+                        .css("font-size", 16)
                 ),
             )
             .attr("id", f"item-{Item.count}")
@@ -180,7 +180,8 @@ items = [
 def tile(url, image, label, width=120, height=120):
     return ltk.Link(url,
         ltk.VBox(
-            ltk.Image(image)
+            #todo make it work with https://nikos912000.github.io
+            ltk.Image(f"/img/{image}")
                 .css("border", "5px solid transparent")
                 .on("mouseenter", ltk.proxy(
                     lambda e: ltk.find(e.target).css("border-color", "orange")
@@ -190,7 +191,7 @@ def tile(url, image, label, width=120, height=120):
                 ))
                 .css("width", width)
                 .css("height", height),
-            ltk.Text(label).css("font-size", 20)
+            ltk.Text(label).css("font-size", 16)
         )
         .css("float", "left")
         .css("width", 120)
@@ -200,21 +201,22 @@ def tile(url, image, label, width=120, height=120):
     ).attr("target", "_blank")
 
 tiles = [
-    tile("https://github.com/nikos912000/randomly-learning/", "img/randomly_learning.png", "Randomly Learning"),
-    tile("https://opensource.datadoghq.com/projects/chaos-controller/#external-contributions-spotlight", "img/chaos_controller.png", "Chaos Controller"),
-    tile("https://github.com/ExpediaGroup/mittens", "img/mittens_square.png", "Mittens"),
-    tile("https://github.com/HotelsDotCom/hapidoc-web", "img/hapidoc.png", "HApiDoc"),
-    tile("https://mast-group.github.io/clams/", "img/clams.png", "CLAMS"),
-    tile("http://mantissa.ee.auth.gr:5050/", "img/mantissa.png", "Mantissa"),
-    tile("https://github.com/nikos912000", "img/github.png", "GitHub"),
-    tile("https://medium.com/@nkatirtzis/list/contributions-6ca764e7fe66", "img/medium.png", "Medium"),
-    tile("https://substack.com/@nikoskatirtzis", "img/substack.png", "Substack"),
-    tile("https://www.linkedin.com/in/nkatirtzis/", "img/linkedin.png", "LinkedIn"),
-    tile("https://mastodon.social/@nikos912000", "img/mastodon.png", "Mastodon"),
-    tile("https://twitter.com/nikos912000/", "img/twitter.png", "Twitter"),
-    tile("https://scholar.google.com/citations?hl=en&user=97v69QoAAAAJ", "img/google_scholar.png", "Publications"),
-    tile("https://speakerdeck.com/nikos912000", "img/speakerdeck.png", "Slides"),
-    tile("https://youtube.com/playlist?list=PL91tHEodCy_GwWJKbqaB-aFQ_jXOa7442&si=oO7h8E4hBQKQGOpZ", "img/youtube.png", "Youtube"),
+    tile("https://github.com/nikos912000/randomly-learning/", "randomly_learning.png", "Randomly Learning"),
+    tile("https://opensource.datadoghq.com/projects/chaos-controller/#external-contributions-spotlight", "chaos_controller.png", "Chaos Controller"),
+    tile("https://github.com/ExpediaGroup/mittens", "mittens_square.png", "Mittens"),
+    tile("https://github.com/HotelsDotCom/hapidoc-web", "hapidoc.png", "HApiDoc"),
+    tile("https://mast-group.github.io/clams/", "clams.png", "CLAMS"),
+    tile("http://mantissa.ee.auth.gr:5050/", "mantissa.png", "Mantissa"),
+    tile("https://github.com/nikos912000", "github.png", "GitHub"),
+    tile("https://medium.com/@nkatirtzis/list/contributions-6ca764e7fe66", "medium.png", "Medium"),
+    tile("https://substack.com/@nikoskatirtzis", "substack.png", "Substack"),
+    tile("https://www.linkedin.com/in/nkatirtzis/", "linkedin.png", "LinkedIn"),
+    tile("https://mastodon.social/@nikos912000", "mastodon.png", "Mastodon"),
+    tile("https://twitter.com/nikos912000/", "twitter.png", "Twitter"),
+    tile("https://bsky.app/profile/nikos912000.bsky.social", "bluesky.png", "Bluesky"),
+    tile("https://scholar.google.com/citations?hl=en&user=97v69QoAAAAJ", "google_scholar.png", "Publications"),
+    tile("https://speakerdeck.com/nikos912000", "speakerdeck.png", "Slides"),
+    tile("https://youtube.com/playlist?list=PL91tHEodCy_GwWJKbqaB-aFQ_jXOa7442&si=oO7h8E4hBQKQGOpZ", "youtube.png", "Youtube"),
 ]
 
 (
