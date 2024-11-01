@@ -1,6 +1,6 @@
 # Nikos Katirtzis
 
-This project implements [nikoskatirtzis.com](https://nikoskatirtzis.com).
+This project implements [nikos912000.github.io](https://nikos912000.github.io).
 
 Inspired by [chrislaffra.com](https://chrislaffra.com).
 
