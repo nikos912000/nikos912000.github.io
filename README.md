@@ -9,5 +9,7 @@ Inspired by [chrislaffra.com](https://chrislaffra.com).
 Start a web server to serve your files in the web browser:
 
 ```bash
-python3 -m http.server
+poetry run python -m http.server
 ```
+
+Open the browser and navigate to `http://localhost:8000`.
