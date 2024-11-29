@@ -60,7 +60,7 @@ items = [
     ),
     Item(
         0,
-        500,
+        530,
         100,
         "2014",
         "MEng",
@@ -69,7 +69,7 @@ items = [
     ),
     Item(
         100,
-        500,
+        450,
         100,
         "2016",
         "MSc",
@@ -78,7 +78,7 @@ items = [
     ),
     Item(
         200,
-        450,
+        400,
         100,
         "2018",
         "CLAMS",
@@ -86,7 +86,7 @@ items = [
         "https://link.springer.com/chapter/10.1007/978-3-319-89363-1_11",
     ),
     Item(
-        220,
+        250,
         200,
         100,
         "2018",
@@ -95,7 +95,7 @@ items = [
         "https://medium.com/hotels-com-technology/going-beyond-grep-for-searching-source-code-zoekt-e7da88ac7b2e",
     ),
     Item(
-        320,
+        340,
         500,
         100,
         "2019",
@@ -105,7 +105,7 @@ items = [
     ),
     Item(
         420,
-        500,
+        350,
         100,
         "2020",
         "Mittens",
@@ -113,8 +113,8 @@ items = [
         "https://medium.com/expedia-group-tech/mittens-warming-up-your-application-f8dd244357b0",
     ),
     Item(
-        420,
-        300,
+        450,
+        150,
         100,
         "2020",
         "Observability",
@@ -122,7 +122,16 @@ items = [
         "https://medium.com/expedia-group-tech/creating-monitoring-dashboards-1f3fbe0ae1ac",
     ),
     Item(
-        520,
+        550,
+        500,
+        100,
+        "2021",
+        "Cloud & Reliability Engineering",
+        "img/expedia_group_reliability_engineering.png",
+        "https://medium.com/expedia-group-tech/using-fault-injection-to-improve-our-new-platforms-reliability-656b1147b132",
+    ),
+    Item(
+        600,
         100,
         100,
         "2022",
@@ -131,8 +140,8 @@ items = [
         "https://medium.com/expedia-group-tech/open-source-at-expedia-group-behind-the-scenes-ecc7d4480566",
     ),
     Item(
-        540,
-        500,
+        680,
+        350,
         100,
         "2022",
         "Platform Engineering",
@@ -140,8 +149,8 @@ items = [
         "https://medium.com/expedia-group-tech/chaos-engineering-at-expedia-group-e51a0288ee2",
     ),
     Item(
-        620,
-        300,
+        800,
+        200,
         100,
         "2023",
         "Reliability Engineering",
@@ -149,7 +158,7 @@ items = [
         "https://www.youtube.com/watch?v=CAq2HPNxVcs",
     ),
     Item(
-        700,
+        850,
         500,
         100,
         "2024",
@@ -158,7 +167,7 @@ items = [
         "https://www.infoq.com/news/2024/04/expedia-startup-autoscaler/",
     ),
     Item(
-        780,
+        950,
         250,
         100,
         "2024",
@@ -167,7 +176,7 @@ items = [
         "https://github.com/nikos912000/randomly-learning/",
     ),
     Item(
-        860,
+        1050,
         500,
         100,
         "2024",
