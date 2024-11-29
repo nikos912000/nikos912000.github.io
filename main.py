@@ -56,7 +56,7 @@ items = [
         "",
         "Nikos Katirtzis",
         "img/nikos.jpg",
-        "https://nikoskatirtzis.com",
+        "https://nikos912000.github.io/",
     ),
     Item(
         0,
