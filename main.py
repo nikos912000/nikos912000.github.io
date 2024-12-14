@@ -3,6 +3,7 @@ import ltk
 width = ltk.window.innerWidth
 height = ltk.window.innerHeight
 
+
 class Main(ltk.Widget):
     def __init__(self, *items):
         ltk.Widget.__init__(
@@ -22,7 +23,7 @@ class Item(ltk.Widget):
                 url,
                 ltk.VBox(
                     ltk.Text(title).css("text-align", "center")
-                        .css("font-size", 20)
+                        .css("font-size", 18)
                         .css("margin-bottom", -2),
                     ltk.Image(src)
                         .css("border", "5px solid transparent")
@@ -60,7 +61,52 @@ items = [
     ),
     Item(
         0,
+        550,
+        100,
+        "2012",
+        "CFG->CNF Converter",
+        "img/cfg_cnf_converter.png",
+        "https://github.com/nikos912000/chomsky-normal-form",
+    ),
+    Item(
+        100,
+        400,
+        100,
+        "2013",
+        "Octree Partitioning",
+        "img/octree_partitioning.png",
+        "https://github.com/nikos912000/octree-partitioning",
+    ),
+    Item(
+        200,
         530,
+        100,
+        "2013",
+        "Parallel KMeans (MPI)",
+        "img/parallel_kmeans.png",
+        "https://github.com/nikos912000/kmeans-mpi",
+    ),
+    Item(
+        300,
+        400,
+        100,
+        "2014",
+        "Parallel kNN (CUDA)",
+        "img/parallel_knn.png",
+        "https://github.com/nikos912000/knn-cuda",
+    ),
+    Item(
+        410,
+        515,
+        100,
+        "2014",
+        "Parallel Pagerank (Pthreads)",
+        "img/parallel_pagerank.png",
+        "https://github.com/nikos912000/parallel-pagerank",
+    ),
+    Item(
+        530,
+        460,
         100,
         "2014",
         "MEng",
@@ -68,8 +114,8 @@ items = [
         "http://ikee.lib.auth.gr/record/291762/files/katirtzis_nikolaos_tdd_reuse.pdf",
     ),
     Item(
-        100,
-        450,
+        640,
+        430,
         100,
         "2016",
         "MSc",
@@ -77,16 +123,25 @@ items = [
         "https://www.dropbox.com/s/m8uaxa967o3khtp/report.pdf",
     ),
     Item(
-        200,
+        700,
+        250,
+        100,
+        "2017",
+        "CLAMS",
+        "img/clams.png",
+        "https://mast-group.github.io/clams/",
+    ),
+    Item(
+        800,
         400,
         100,
         "2018",
-        "CLAMS",
+        "FASE",
         "img/clams_fase.png",
         "https://link.springer.com/chapter/10.1007/978-3-319-89363-1_11",
     ),
     Item(
-        250,
+        880,
         200,
         100,
         "2018",
@@ -95,7 +150,7 @@ items = [
         "https://medium.com/hotels-com-technology/going-beyond-grep-for-searching-source-code-zoekt-e7da88ac7b2e",
     ),
     Item(
-        340,
+        960,
         500,
         100,
         "2019",
@@ -104,7 +159,7 @@ items = [
         "https://grpc.io/docs/languages/java/#dev-stories",
     ),
     Item(
-        420,
+        1030,
         350,
         100,
         "2020",
@@ -113,7 +168,7 @@ items = [
         "https://medium.com/expedia-group-tech/mittens-warming-up-your-application-f8dd244357b0",
     ),
     Item(
-        450,
+        1100,
         150,
         100,
         "2020",
@@ -122,7 +177,7 @@ items = [
         "https://medium.com/expedia-group-tech/creating-monitoring-dashboards-1f3fbe0ae1ac",
     ),
     Item(
-        550,
+        1170,
         500,
         100,
         "2021",
@@ -131,7 +186,7 @@ items = [
         "https://medium.com/expedia-group-tech/using-fault-injection-to-improve-our-new-platforms-reliability-656b1147b132",
     ),
     Item(
-        600,
+        1250,
         100,
         100,
         "2022",
@@ -140,7 +195,7 @@ items = [
         "https://medium.com/expedia-group-tech/open-source-at-expedia-group-behind-the-scenes-ecc7d4480566",
     ),
     Item(
-        680,
+        1320,
         350,
         100,
         "2022",
@@ -149,7 +204,7 @@ items = [
         "https://medium.com/expedia-group-tech/chaos-engineering-at-expedia-group-e51a0288ee2",
     ),
     Item(
-        800,
+        1420,
         200,
         100,
         "2023",
@@ -158,7 +213,7 @@ items = [
         "https://www.youtube.com/watch?v=CAq2HPNxVcs",
     ),
     Item(
-        850,
+        1500,
         500,
         100,
         "2024",
@@ -167,7 +222,7 @@ items = [
         "https://www.infoq.com/news/2024/04/expedia-startup-autoscaler/",
     ),
     Item(
-        950,
+        1570,
         250,
         100,
         "2024",
@@ -176,7 +231,7 @@ items = [
         "https://github.com/nikos912000/randomly-learning/",
     ),
     Item(
-        1050,
+        1650,
         500,
         100,
         "2024",
@@ -267,21 +322,21 @@ def get_line(n):
 
 ltk.find("#main").append(
     ltk.create(f"""
-        <svg id="svg" height="850" width="1500">
+        <svg id="svg" height="850" width="2000">
             <line x1="40" y1="20" x2="40" y2="800" style="stroke:lightgray;stroke-width:2" />
-            <line x1="0" y1="770" x2="1500" y2="770" style="stroke:lightgray;stroke-width:2" />
+            <line x1="0" y1="770" x2="2000" y2="770" style="stroke:lightgray;stroke-width:2" />
 
             <text x="200" y="807" style="font-size:16pt; fill:gray">noob</text>
-            <text x="1300" y="807" style="font-size:16pt; fill:gray">now</text>
-            <text x="730" y="807" style="font-size:16pt; fill:lightgray">time</text>
+            <text x="1800" y="807" style="font-size:16pt; fill:gray">now</text>
+            <text x="1035" y="807" style="font-size:16pt; fill:lightgray">time</text>
 
-            <line x1="600" y1="800" x2="700" y2="800" style="stroke:lightgray;stroke-width:2" />
-            <line x1="900" y1="800" x2="880" y2="790" style="stroke:lightgray;stroke-width:2" />
-            <line x1="900" y1="800" x2="880" y2="810" style="stroke:lightgray;stroke-width:2" />
+            <line x1="900" y1="800" x2="1000" y2="800" style="stroke:lightgray;stroke-width:2" />
+            <line x1="1200" y1="800" x2="1180" y2="790" style="stroke:lightgray;stroke-width:2" />
+            <line x1="1200" y1="800" x2="1180" y2="810" style="stroke:lightgray;stroke-width:2" />
 
-            <line x1="800" y1="800" x2="900" y2="800" style="stroke:lightgray;stroke-width:2" />
-            <line x1="600" y1="800" x2="620" y2="790" style="stroke:lightgray;stroke-width:2" />
-            <line x1="600" y1="800" x2="620" y2="810" style="stroke:lightgray;stroke-width:2" />
+            <line x1="1100" y1="800" x2="1200" y2="800" style="stroke:lightgray;stroke-width:2" />
+            <line x1="900" y1="800" x2="920" y2="790" style="stroke:lightgray;stroke-width:2" />
+            <line x1="900" y1="800" x2="920" y2="810" style="stroke:lightgray;stroke-width:2" />
 
             <text style="font-size:16pt; fill:gray;" transform="translate(28,85) rotate(270)">Human</text>
             <text style="font-size:16pt; fill:gray;" transform="translate(28,685) rotate(270)">Technical</text>
@@ -328,14 +383,19 @@ def show(index):
             "height": h,
             "opacity": 1,
         }),
-        50, 
+        50,
         lambda: show(index + 1)
     )
     if x > width - 200:
         ltk.find("#main").animate(
             ltk.to_js({
                 "left": -x + width * 3 /4,
-            }), 500
+            }), 500,
+            lambda: ltk.find("#main").animate(
+                ltk.to_js({
+                    "left": 0,
+                }), 500
+            )
         )
 
 show(0)
