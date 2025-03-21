@@ -239,6 +239,15 @@ items = [
         "img/slo_platform.png",
         "https://medium.com/expedia-group-tech/enhancing-data-reliability-with-an-slo-platform-de00249756f6",
     ),
+    Item(
+        1780,
+        450,
+        100,
+        "2025",
+        "Model Context Protocol",
+        "img/mcp.png",
+        "https://nikoskatirtzis.substack.com/p/experimenting-with-the-model-context",
+    ),
 ]
 
 def tile(url, image, label, width=120, height=120):
