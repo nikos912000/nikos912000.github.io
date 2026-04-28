@@ -248,6 +248,15 @@ items = [
         "img/mcp.png",
         "https://nikoskatirtzis.substack.com/p/experimenting-with-the-model-context",
     ),
+    Item(
+        1880,
+        200,
+        100,
+        "2026",
+        "Service Telemetry Analyzer",
+        "img/star.svg",
+        "https://medium.com/expedia-group-tech/expedias-service-telemetry-analyzer-60f2f96c5351",
+    ),
 ]
 
 def tile(url, image, label, width=120, height=120):
@@ -274,6 +283,7 @@ def tile(url, image, label, width=120, height=120):
     ).attr("target", "_blank")
 
 tiles = [
+    tile("https://medium.com/expedia-group-tech/expedias-service-telemetry-analyzer-60f2f96c5351", "star.svg", "STAR"),
     tile("https://github.com/nikos912000/randomly-learning/", "randomly_learning.png", "Randomly Learning"),
     tile("https://opensource.datadoghq.com/projects/chaos-controller/#external-contributions-spotlight", "chaos_controller.png", "Chaos Controller"),
     tile("https://github.com/ExpediaGroup/mittens", "mittens_square.png", "Mittens"),
