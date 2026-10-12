@@ -257,6 +257,15 @@ items = [
         "img/star.svg",
         "https://medium.com/expedia-group-tech/expedias-service-telemetry-analyzer-60f2f96c5351",
     ),
+    Item(
+        1980,
+        450,
+        100,
+        "2026",
+        "Injecting & Explaining Failure",
+        "img/imperial.png",
+        "https://speakerdeck.com/nikos912000/injecting-failure-explaining-failure",
+    ),
 ]
 
 def tile(url, image, label, width=120, height=120):
@@ -341,9 +350,9 @@ def get_line(n):
 
 ltk.find("#main").append(
     ltk.create(f"""
-        <svg id="svg" height="850" width="2000">
+        <svg id="svg" height="850" width="2200">
             <line x1="40" y1="20" x2="40" y2="800" style="stroke:lightgray;stroke-width:2" />
-            <line x1="0" y1="770" x2="2000" y2="770" style="stroke:lightgray;stroke-width:2" />
+            <line x1="0" y1="770" x2="2200" y2="770" style="stroke:lightgray;stroke-width:2" />
 
             <text x="200" y="807" style="font-size:16pt; fill:gray">noob</text>
             <text x="1800" y="807" style="font-size:16pt; fill:gray">now</text>
